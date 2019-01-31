@@ -10,9 +10,19 @@ import UIKit
 
 class FriendTableViewCell: UITableViewCell {
     
+    func updateViews() {
+        guard let friend = friend else { return }
+        imageOfFriend.image = friend.image
+        friendNameLabel.text = friend.name.capitalized
+    }
+    
     @IBOutlet weak var imageOfFriend: UIImageView!
     @IBOutlet weak var friendNameLabel: UILabel!
     
-    var friendController: FriendController?
-    
+    var friend: Friend? {
+        didSet {
+            updateViews()
+        }
+    }
+
 }

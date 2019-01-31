@@ -14,7 +14,7 @@ class FriendController {
     
     func initializeFriends(list: [String: String]) {
     
-        for (name, detail) in names {
+        for (name, detail) in list {
             guard let image = UIImage(named: name) else { return }
             let friend = Friend(image: image, name: name, detail: detail)
             friends.append(friend)

@@ -13,6 +13,7 @@ class FriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         friendController.initializeFriends(list: names)
+        tableView.reloadData()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,9 +22,7 @@ class FriendsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
         guard let friendCell = cell as? FriendTableViewCell else { return cell }
-        
-        friendCell.friendController = self.friendController
-        
+        friendCell.friend = self.friendController.friends[indexPath.row]
         return friendCell
     }
     

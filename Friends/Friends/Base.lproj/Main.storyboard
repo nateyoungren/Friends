@@ -29,10 +29,11 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MhR-K1-kF9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-Z7-aSp">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-Z7-aSp">
                                                     <rect key="frame" x="0.0" y="0.0" width="119.5" height="119.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="3cB-Z7-aSp" secondAttribute="height" multiplier="1:1" id="VMb-48-H9J"/>
+                                                        <constraint firstAttribute="width" constant="119.5" id="jHO-nT-fCA"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzR-eS-8f3">
@@ -78,22 +79,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q6t-hX-0hP">
-                                <rect key="frame" x="33" y="146" width="309" height="381"/>
+                                <rect key="frame" x="33" y="146" width="309" height="377"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="iUN-Is-i5P">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="iUN-Is-i5P">
                                         <rect key="frame" x="0.0" y="0.0" width="309" height="309"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iUN-Is-i5P" secondAttribute="height" multiplier="1:1" id="GiN-rW-ZXv"/>
+                                            <constraint firstAttribute="width" constant="309" id="oQp-WV-rD0"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-KU-qdC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-KU-qdC">
                                         <rect key="frame" x="0.0" y="317" width="309" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQp-cd-vwm">
-                                        <rect key="frame" x="0.0" y="356.5" width="309" height="24.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQp-cd-vwm">
+                                        <rect key="frame" x="0.0" y="356.5" width="309" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -105,7 +107,7 @@
                         <constraints>
                             <constraint firstItem="q6t-hX-0hP" firstAttribute="centerX" secondItem="rdY-pr-lOj" secondAttribute="centerX" id="kA0-AX-4FT"/>
                             <constraint firstItem="q6t-hX-0hP" firstAttribute="top" secondItem="Kjx-0q-pOS" secondAttribute="top" constant="30" id="rE8-NU-40i"/>
-                            <constraint firstItem="Kjx-0q-pOS" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="q6t-hX-0hP" secondAttribute="bottom" priority="998" constant="140" id="xEU-Yz-vhe"/>
+                            <constraint firstItem="Kjx-0q-pOS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="q6t-hX-0hP" secondAttribute="bottom" priority="993" constant="140" id="xEU-Yz-vhe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjx-0q-pOS"/>
                     </view>
