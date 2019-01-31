@@ -9,15 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     @IBOutlet weak var imageOfFriend: UIImageView!
     @IBOutlet weak var friendNameLabel: UILabel!
     @IBOutlet weak var friendDetailLabel: UILabel!
+    
+    var friend: Friend?
     
 }
