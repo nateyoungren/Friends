@@ -14,6 +14,8 @@
 		7741815022039D890043A1F6 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741814F22039D890043A1F6 /* FriendsTableViewController.swift */; };
 		7741815222039D970043A1F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741815122039D970043A1F6 /* DetailViewController.swift */; };
 		7741815422039DA70043A1F6 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741815322039DA70043A1F6 /* FriendTableViewCell.swift */; };
+		774181562203A0DB0043A1F6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774181552203A0DB0043A1F6 /* Friend.swift */; };
+		774181582203A1220043A1F6 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774181572203A1220043A1F6 /* FriendController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7741814F22039D890043A1F6 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		7741815122039D970043A1F6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7741815322039DA70043A1F6 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		774181552203A0DB0043A1F6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		774181572203A1220043A1F6 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				7741814F22039D890043A1F6 /* FriendsTableViewController.swift */,
 				7741815122039D970043A1F6 /* DetailViewController.swift */,
 				7741815322039DA70043A1F6 /* FriendTableViewCell.swift */,
+				774181552203A0DB0043A1F6 /* Friend.swift */,
+				774181572203A1220043A1F6 /* FriendController.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -142,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7741815222039D970043A1F6 /* DetailViewController.swift in Sources */,
+				774181582203A1220043A1F6 /* FriendController.swift in Sources */,
 				7741815022039D890043A1F6 /* FriendsTableViewController.swift in Sources */,
+				774181562203A0DB0043A1F6 /* Friend.swift in Sources */,
 				7741813E22039CAE0043A1F6 /* AppDelegate.swift in Sources */,
 				7741815422039DA70043A1F6 /* FriendTableViewCell.swift in Sources */,
 			);
