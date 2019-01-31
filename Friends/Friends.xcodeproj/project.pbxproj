@@ -16,6 +16,8 @@
 		7741815422039DA70043A1F6 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741815322039DA70043A1F6 /* FriendTableViewCell.swift */; };
 		774181562203A0DB0043A1F6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774181552203A0DB0043A1F6 /* Friend.swift */; };
 		774181582203A1220043A1F6 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774181572203A1220043A1F6 /* FriendController.swift */; };
+		7741815E2203AEF10043A1F6 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741815D2203AEF10043A1F6 /* NavigationControllerDelegate.swift */; };
+		774181602203AFEF0043A1F6 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741815F2203AFEF0043A1F6 /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7741815322039DA70043A1F6 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		774181552203A0DB0043A1F6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		774181572203A1220043A1F6 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		7741815D2203AEF10043A1F6 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		7741815F2203AFEF0043A1F6 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +71,47 @@
 				7741814422039CAF0043A1F6 /* Assets.xcassets */,
 				7741814622039CAF0043A1F6 /* LaunchScreen.storyboard */,
 				7741814922039CAF0043A1F6 /* Info.plist */,
-				7741814F22039D890043A1F6 /* FriendsTableViewController.swift */,
-				7741815122039D970043A1F6 /* DetailViewController.swift */,
-				7741815322039DA70043A1F6 /* FriendTableViewCell.swift */,
-				774181552203A0DB0043A1F6 /* Friend.swift */,
-				774181572203A1220043A1F6 /* FriendController.swift */,
+				774181592203AEB00043A1F6 /* View Controllers */,
+				7741815C2203AECC0043A1F6 /* Views */,
+				7741815A2203AEBC0043A1F6 /* Model */,
+				7741815B2203AEC20043A1F6 /* Model Controller */,
+				7741815D2203AEF10043A1F6 /* NavigationControllerDelegate.swift */,
+				7741815F2203AFEF0043A1F6 /* ImageTransitionAnimator.swift */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		774181592203AEB00043A1F6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7741814F22039D890043A1F6 /* FriendsTableViewController.swift */,
+				7741815122039D970043A1F6 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7741815A2203AEBC0043A1F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				774181552203A0DB0043A1F6 /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7741815B2203AEC20043A1F6 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				774181572203A1220043A1F6 /* FriendController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		7741815C2203AECC0043A1F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7741815322039DA70043A1F6 /* FriendTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,10 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7741815222039D970043A1F6 /* DetailViewController.swift in Sources */,
+				774181602203AFEF0043A1F6 /* ImageTransitionAnimator.swift in Sources */,
 				774181582203A1220043A1F6 /* FriendController.swift in Sources */,
 				7741815022039D890043A1F6 /* FriendsTableViewController.swift in Sources */,
 				774181562203A0DB0043A1F6 /* Friend.swift in Sources */,
 				7741813E22039CAE0043A1F6 /* AppDelegate.swift in Sources */,
+				7741815E2203AEF10043A1F6 /* NavigationControllerDelegate.swift in Sources */,
 				7741815422039DA70043A1F6 /* FriendTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
