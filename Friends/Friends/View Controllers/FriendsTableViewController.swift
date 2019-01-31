@@ -14,6 +14,7 @@ class FriendsTableViewController: UITableViewController {
         super.viewDidLoad()
         friendController.initializeFriends(list: names)
         tableView.reloadData()
+        navigationController?.delegate = delegate
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,18 +22,27 @@ class FriendsTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
-        guard let friendCell = cell as? FriendTableViewCell else { return cell }
-        friendCell.friend = self.friendController.friends[indexPath.row]
-        return friendCell
+
+        let friend = self.friendController.friends[indexPath.row]
+        
+        cell.imageView?.image = friend.image
+        cell.textLabel?.text = friend.name.capitalized
+        
+        return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Detail" {
             guard let detailVC = segue.destination as? DetailViewController,
             let index = tableView.indexPathForSelectedRow else { return }
+            
+            delegate.sourceCell = tableView.cellForRow(at: index)
+            
             detailVC.friend = friendController.friends[index.row]
         }
     }
+    
+    var delegate = NavigationControllerDelegate()
     
     let friendController = FriendController()
     
