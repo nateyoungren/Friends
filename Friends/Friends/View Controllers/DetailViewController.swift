@@ -20,6 +20,7 @@ class DetailViewController: UIViewController {
         imageOfFriend?.image = friend.image
         friendNameLabel?.text = friend.name.capitalized
         friendDetailLabel?.text = friend.detail
+        navigationItem.title = friend.name.capitalized
     }
     
     @IBOutlet weak var imageOfFriend: UIImageView!

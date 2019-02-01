@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="877.60000000000002" y="115.59220389805098"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="Phy-VR-ZJV">
             <objects>
                 <viewController id="gt6-z5-lBc" customClass="DetailViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,6 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjx-0q-pOS"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="UQ8-eK-OK7"/>
                     <connections>
                         <outlet property="friendDetailLabel" destination="jQp-cd-vwm" id="Kcv-Ms-oYE"/>
                         <outlet property="friendNameLabel" destination="f3b-KU-qdC" id="54B-gq-SVO"/>
